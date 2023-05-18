@@ -12,6 +12,7 @@
     --accentBlueDark: #1e6091;
     --textWhite: #ffffff;
     --darkTop: #023047;
+    --darkTopTransparent: #02304750;
 
     --mainHeading: 'Nunito', sans-serif;
 }
@@ -118,7 +119,7 @@
 }
 
 .links:hover {
-    background-color: #023047;
+    background-color: var(--darkTopTransparent);
     transition: all ease .2s;
     border-radius: 7px;
 }
@@ -129,6 +130,7 @@
     font-size: 1em;
     text-transform: uppercase;
 }
+
 
 
 
