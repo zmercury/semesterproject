@@ -7,7 +7,11 @@
     --accentGreen: #02c39a; 
     --accentRed: #ff595e;
     --accentOrange: #ff9914;
+    --accentGrey: #778da9;
+    --accentBlueLight: #4cc9f0;
+    --accentBlueDark: #1e6091;
     --textWhite: #ffffff;
+    --darkTop: #023047;
 
     --mainHeading: 'Nunito', sans-serif;
 }
@@ -18,7 +22,7 @@
     font-family: var(--mainHeading);
 }
 
-.topBar {
+/* .topBar {
     width: 100%;
     height: 2em;
 
@@ -27,7 +31,7 @@
     justify-content: center;
     justify-content: center;
 
-    background-color: var(--accentBlue);
+    background-color: var(--darkTop );
     color: var(--textWhite) ;
     font-size: 14px;
 
@@ -55,13 +59,13 @@
     
     margin-right: 3em;
     
-}
+} */
 
 .mainHeader {
     width: 100%;
     height: 7em;
 
-    background-color: var(--accentGreen);
+    background-color: var(--accentBlueLight);
 
     display: flex;
     justify-content: center;
@@ -83,6 +87,9 @@
     width: 130px;
     height: auto;
 }
+
+/* Nav Css */
+
 
 .navContainer {
     width: 80%;
