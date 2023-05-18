@@ -88,6 +88,11 @@
     height: auto;
 }
 
+.logo:hover {
+    transform: scale(1.1);
+    transition: ease-in-out all .1s;
+}
+
 /* Nav Css */
 
 
@@ -96,6 +101,34 @@
     height: 7em;
 
     display: flex;
-    
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 3em;
 }
+
+.navigation {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+.links {
+    display: inline;
+    padding: 1em 1.6em;
+}
+
+.links:hover {
+    background-color: #023047;
+    transition: all ease .2s;
+    border-radius: 7px;
+}
+
+.innerLinks{
+    text-decoration: none;
+    color: var(--textWhite);
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+
 
