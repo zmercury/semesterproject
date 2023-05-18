@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,900;1,1000&display=swap');
+
+:root {
+    --mainBlack: #2b2d42;
+    --mainWhite: #edf2f4;
+    --accentBlue: #073b4c;
+    --accentGreen: #02c39a; 
+    --accentRed: #ff595e;
+    --accentOrange: #ff9914;
+    --textWhite: #ffffff;
+
+    --mainHeading: 'Nunito', sans-serif;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: var(--mainHeading);
+}
+
+.topBar {
+    width: 100%;
+    height: 2em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: center;
+
+    background-color: var(--accentBlue);
+    color: var(--textWhite) ;
+    font-size: 14px;
+
+}
+
+.leftTobBar {
+    width: 50%;
+    height: 2em;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-left: 3em;
+    
+}
+
+.rightTobBar {
+    width: 50%;
+    height: 2em;
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    margin-right: 3em;
+    
+}
+
+.mainHeader {
+    width: 100%;
+    height: 7em;
+
+    background-color: var(--accentGreen);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoContainer {
+    width: 20%;
+    height: 7em;
+    
+    padding-left: 3em;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    width: 130px;
+    height: auto;
+}
+
+.navContainer {
+    width: 80%;
+    height: 7em;
+
+    display: flex;
+    
+}
+
