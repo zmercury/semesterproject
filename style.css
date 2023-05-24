@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 :root {
+    --primaryColor: #f9ca13;
     --mainBlack: #2b2d42;
+    --mainBlackTransparent: #2b2d4216;
     --mainWhite: #edf2f4;
     --accentBlue: #073b4c;
     --accentGreen: #02c39a; 
@@ -26,133 +28,98 @@
 * {
     margin: 0%;
     padding: 0%;
+}
+
+body {
     font-family: var(--otherfont);
 }
 
-.mainHeader {
+.headerContainer {
     width: 100%;
-    height: 7em;
-
-    background-color: var(--accentBlueLight);
 
     display: flex;
     justify-content: center;
-    align-items: center;
 
 }
 
-.logoContainer {
-    width: 20%;
-    height: 7em;
+.innerHeaderContainer {
+    width: 95%;
+    height: 15vh;
+
+    border-bottom: 1px var(--mainBlackTransparent) solid;
     
-    padding-left: 3em;
-
     display: flex;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
+
+    font-weight: 700;
 }
 
-.logo {
-    width: 130px;
+.logoContainer > img {
+    width: 160px;
     height: auto;
 }
 
-.logo:hover {
-    transform: scale(1.1);
-    transition: ease-in-out all .1s;
-}
-
-/* Nav Css */
-
-
-.navContainer {
-    width: 80%;
-    height: 7em;
-
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 3em;
-}
-
-.navigation {
+.navContainer > ul  {
     list-style-type: none;
-    margin: 0%;
+    margin: 0;
     padding: 0%;
 }
 
-.links {
+.navList > li {
     display: inline;
-    padding: 1em 1.6em;
-}
-
-
-
-.innerLinks{
-    text-decoration: none;
-    color: var(--textWhite);
-    font-size: 1em;
-    text-transform: uppercase;
-}
-
-.innerLinks:hover {
-    text-decoration: underline;
-    padding-bottom: 2em;
-}
-
-.heroSection{
-    background-image:url("/images/everest-overlay.jpg");
-    width: 100%;
-    height: 82vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    display: flex;
+    
     justify-content: center;
     align-items: center;
+
+    font-family: 'PT Sans', sans-serif !important;
 }
 
-.heroLeft{
-    width: 50%;
-    height: 100%;
+.mainLinks {
+    padding: 1em 2.5em;
+    text-decoration: none;
+    color: var(--mainBlack);
+}
+
+.mainLinks:hover {
+    background-color: var(--primaryColor);
     color: var(--textWhite);
+    border-radius: .6em;
+    transition: all .1s ease;
+}
+
+.admitNowButton {
+    background-color: var(--textWhite);
+    font-family: 'PT Sans', sans-serif !important;
+    font-weight: 600;
     
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-
-    padding: 2em 7em;
-}
-
-.heroRight{
-    width: 50%;
-    height: 100%;
-}
-
-.heroTopPara {
-    font-size: 1em;
-}
-
-.heroHeading {
-    font-size: 2em;
-    padding: .6em 0 .6em 0;
-}
-
-.heroPara {
-    padding-bottom: 1em;
-}
-
-.heroLeft > button {
-    padding: .8em 1.8em;
     border: none;
-    border-radius: 15px;
-
-    color: var(--textWhite);    
-    background-color: var(--accentBlueLight);
+    padding: .8em 2.2em;
     
-    font-size: .9em;
+    border-radius: 12px;
+    border: 1px var(--mainBlack) solid;
+    
+    color: var(--mainBlack);
+    font-size: 1em;
+    
+    margin-right: 1.2em;
+}
+
+.admitNowButton:hover {
+    background-color: var(--primaryColor);
+    color: var(--textWhite);
+    border: 1px white solid;
+}
+
+.menuButton {
+    background-color: var(--primaryColor);
+    border: none;
+    border-radius: 6px;
+
+    position: relative;
+    top: -3px;
+    padding: 1em;
 }
 
 .mainInfoSection {
@@ -303,18 +270,22 @@
     align-items: center;
     flex-direction: column;
     background-color: var(--textWhite);
+    border-radius: 1em;
 }
 
 .innerLeftImageContainer > img {
     width: 100%;
+    border-radius: 1em;
 }
 
 .innerRightImageContainer > img {
     width: 100%;
     object-fit: cover;
+    border-radius: 1em;
 }
 
 .innerLeftContent {
+    border-radius: 0 0 1em  1em;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
