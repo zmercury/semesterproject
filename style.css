@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,900;1,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 :root {
     --mainBlack: #2b2d42;
@@ -6,6 +7,7 @@
     --accentBlue: #073b4c;
     --accentGreen: #02c39a; 
     --accentRed: #ff595e;
+    --accentRedDark: #da4b50;
     --accentOrange: #ff9914;
     --accentGrey: #778da9;
     --accentBlueLight: #4cc9f0;
@@ -13,54 +15,19 @@
     --textWhite: #ffffff;
     --darkTop: #023047;
     --darkTopTransparent: #02304750;
+    --infoColor: #f6f9fc;
+    --infoColorAlternate: #f6f9fc;
 
     --mainHeading: 'Nunito', sans-serif;
+    --rato: "Open Sans", "Odoo Unicode Support Noto", sans-serif;
+    --otherfont: 'Open Sans', sans-serif;
 }
 
 * {
     margin: 0%;
     padding: 0%;
-    font-family: var(--mainHeading);
+    font-family: var(--otherfont);
 }
-
-/* .topBar {
-    width: 100%;
-    height: 2em;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: center;
-
-    background-color: var(--darkTop );
-    color: var(--textWhite) ;
-    font-size: 14px;
-
-}
-
-.leftTobBar {
-    width: 50%;
-    height: 2em;
-
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    margin-left: 3em;
-    
-}
-
-.rightTobBar {
-    width: 50%;
-    height: 2em;
-    
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    
-    margin-right: 3em;
-    
-} */
 
 .mainHeader {
     width: 100%;
@@ -71,6 +38,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .logoContainer {
@@ -118,11 +86,7 @@
     padding: 1em 1.6em;
 }
 
-.links:hover {
-    background-color: var(--darkTopTransparent);
-    transition: all ease .2s;
-    border-radius: 7px;
-}
+
 
 .innerLinks{
     text-decoration: none;
@@ -131,6 +95,246 @@
     text-transform: uppercase;
 }
 
+.innerLinks:hover {
+    text-decoration: underline;
+    padding-bottom: 2em;
+}
 
+.heroSection{
+    background-image:url("/images/everest-overlay.jpg");
+    width: 100%;
+    height: 82vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.heroLeft{
+    width: 50%;
+    height: 100%;
+    color: var(--textWhite);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 2em 7em;
+}
+
+.heroRight{
+    width: 50%;
+    height: 100%;
+}
+
+.heroTopPara {
+    font-size: 1em;
+}
+
+.heroHeading {
+    font-size: 2em;
+    padding: .6em 0 .6em 0;
+}
+
+.heroPara {
+    padding-bottom: 1em;
+}
+
+.heroLeft > button {
+    padding: .8em 1.8em;
+    border: none;
+    border-radius: 15px;
+
+    color: var(--textWhite);    
+    background-color: var(--accentBlueLight);
+    
+    font-size: .9em;
+}
+
+.mainInfoSection {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.infoLeft{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2em 1em 2em 5em;
+    justify-content: space-evenly   ;
+
+}
+
+.infoPara{
+    color: var(--accentBlueDark);
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.infoHeading {
+    font-size: 1.8em;
+    color: var(--mainBlack);
+}
+
+.infoBottomPara {
+    font-size: .92em;
+    color: var(--mainBlack);
+}
+
+.infoBottomReadMore {
+    color: var(--accentRedDark);
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .9em;
+}
+
+.infoRight{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infoRight > div {
+    margin-top: 4em;
+}
+
+.rightTop {
+    background-color: var(--infoColor);
+    width: 60%;
+    height: 10em;
+    
+    border: none;
+    border-radius: 7px;
+    padding: 1.9em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    justify-content: space-around;
+
+    color: var(--mainBlack);
+}
+
+.rightBottom {
+    background-color: var(--infoColor);
+    width: 60%;
+    height: 15em;
+    
+    border: none;
+    border-radius: 7px;
+    padding: 1.9em;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    justify-content: space-around;
+
+    color: var(--mainBlack);
+}
+
+.rightTopHeading {
+    font-size: 1em;
+}
+
+.infoPara:after {
+    content: "";
+    display: inline-block;
+    height: 0.5em;
+    vertical-align: bottom;
+    width: 20%;
+    margin-right: -100%;
+    margin-left: 10px;
+    border-top: 1px solid var(--accentBlueDark);
+}
+
+.rightTopDate {
+    font-size: .8em;
+}
+
+.rightTopDesc {
+    font-size: .9em;
+}
+
+.rightTopSpan{
+    font-size: .9em;
+    font-weight: 700;
+    color: var(--accentRedDark);
+}
+
+.principalInfoSection {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--infoColorAlternate);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.principalInnerContainer{
+    width: 80%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.principalInnerContainer > div {
+    background-color: var(--textWhite);
+    width: 47%;
+    height: 80%;
+    
+    border-radius: 1em;
+}
+
+.innerLeft {
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--textWhite);
+}
+
+.innerLeftImageContainer > img {
+    width: 100%;
+}
+
+.innerRightImageContainer > img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.innerLeftContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: first baseline;
+    
+    position: relative;
+    top: -15%;
+    height: max-content ;
+    background-color: var(--textWhite);
+    padding: 2em;
+}
+
+.innerLeftContent > p {
+    padding: 1.5em 0 1.5em 0;
+}
+
+.innerLeftContent > span {
+    font-size: .9em !important;
+}
+
+.innerLeftContent > h2 {
+    padding-top: .5em;
+}
