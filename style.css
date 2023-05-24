@@ -86,7 +86,7 @@ body {
     background-color: var(--primaryColor);
     color: var(--textWhite);
     border-radius: .6em;
-    transition: all .1s ease;
+    transition: all .12s ease;
 }
 
 .admitNowButton {
@@ -100,26 +100,35 @@ body {
     border-radius: 12px;
     border: 1px var(--mainBlack) solid;
     
-    color: var(--mainBlack);
     font-size: 1em;
     
     margin-right: 1.2em;
 }
 
 .admitNowButton:hover {
-    background-color: var(--primaryColor);
+    background-color: var(--accentGreen);
     color: var(--textWhite);
     border: 1px white solid;
+
+    transition: all .15s ease;
 }
 
 .menuButton {
     background-color: var(--primaryColor);
     border: none;
     border-radius: 6px;
-
+    
     position: relative;
-    top: -3px;
-    padding: 1em;
+
+    padding: .8em;
+    font-size: 1em;
+    
+    color: var(--textWhite);
+}
+
+.menuButton:hover {
+    transform: scale(1.1);
+    transition: all .15s ease;
 }
 
 .mainInfoSection {
