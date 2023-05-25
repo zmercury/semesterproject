@@ -5,6 +5,7 @@
     --primaryColor: #f9ca13;
     --mainBlack: #2b2d42;
     --mainBlackTransparent: #2b2d4216;
+    --blackAlternate: #151515;
     --mainWhite: #edf2f4;
     --accentBlue: #073b4c;
     --accentGreen: #02c39a; 
@@ -25,13 +26,17 @@
     --otherfont: 'Open Sans', sans-serif;
 }
 
-* {
-    margin: 0%;
-    padding: 0%;
-}
-
 body {
     font-family: var(--otherfont);
+
+    margin: 0%;
+    padding: 0%;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
 }
 
 .headerContainer {
@@ -39,7 +44,6 @@ body {
 
     display: flex;
     justify-content: center;
-
 }
 
 .innerHeaderContainer {
@@ -131,9 +135,164 @@ body {
     transition: all .15s ease;
 }
 
+.heroContainer {
+    margin-top: 3em;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerHeroContainer {
+    width: 100%;
+}
+
+.innerHeroTop {
+    display: flex;
+    height: 12em;
+
+    justify-content: center;
+}
+
+.innerHeroTopRight {
+    width: 20%;
+    line-height: 1.5em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.innerHeroTopRight > p{
+    font-weight: 700;
+    font-size: .9em;
+}
+
+.innerHeroTopRightButton {
+    padding: 1.2em 1.6em;
+
+    border: 1px solid var(--blackAlternate);
+    border-radius: 1em;
+
+    background-color: var(--blackAlternate);
+    color: var(--textWhite);
+
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.innerHeroTopRightButton:hover{
+    transform: scale(1.07);
+    transition: all ease .2s;
+}
+
+.innerHeroTopRightButton .buttonIcon {
+    padding: .6em .7em;
+    border-radius: 50%;
+    color: var(--textWhite);
+    background-color: var(--accentOrange);
+}
+
+.innerHeroTopLeft {
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    justify-content: first baseline;
+}
+
+.innerHeroTopLeftHeading {
+    font-weight: 900;
+    font-size: 2.2em;
+}
+
+.innerHeroBottom {
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.announcementContainer {
+    background-color: var(--textWhite);
+    padding: 1.1em;
+    font-family: var(--mainHeading) !important;
+    
+    display: none;
+    /* display: flex; */
+    /* justify-content: space-between;
+    align-items: first baseline; */
+    flex-direction: column;
+
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2em;
+    margin-right: -10em;
+    margin-top: 10em;
+    z-index: 10;
+}
+
+.announcementContainer:hover {
+    transform: scale(1.03);
+    transition: all .2s ease-in-out;
+}
+
+.announcementContainer > img {
+    width: 200px;
+    border-radius: 14px;
+    box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.announcementLinks {
+    font-size: .8em;  
+    font-weight: 600;
+    align-self: flex-end;  
+}
+
+.announcementLinks > a {
+    text-decoration: none;
+    color: var(--blackAlternate);
+}
+
+.announcementHeading {
+    font-size: 1em;
+    font-weight: 700;
+
+    padding: 1em 0 .3em 0;
+}
+
+.heroImage {
+    width: 1200px;
+    border-radius: 3em 0 0 0;
+
+    margin-top: -2em;
+    z-index: -1;
+}
+
+
+.alternateHeroContainer {
+    width: 1200px;
+    height: 100px;
+
+    border-radius: 0 0 0 3em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 600;
+
+    color: var(--textWhite);
+    background-color: var(--accentOrange);
+}
+
+
 .mainInfoSection {
     width: 100%;
-    height: 100vh;
+    height: 768px;
     display: flex;
     justify-content: center;
 }
@@ -247,7 +406,7 @@ body {
 
 .principalInfoSection {
     width: 100%;
-    height: 100vh;
+    height: 768px;
     background-color: var(--infoColorAlternate);
     
     display: flex;
@@ -317,4 +476,39 @@ body {
 
 .innerLeftContent > h2 {
     padding-top: .5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #acacac;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #252525;
+    border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accentRed)  n;
 }
