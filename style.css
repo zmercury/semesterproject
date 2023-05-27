@@ -643,6 +643,93 @@ body {
 }
 
 
+/* blogpage css */
+
+.blogContainer {
+    width: 100%;
+    padding: 2em 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.blogInnerContainer {
+    width: 80%;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.blog-post {
+    border: 1px solid var(--borderColor);
+    border-radius: 12px;
+    padding: 1.5em;
+}
+
+.blog-post img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+
+    border-radius: 12px;
+}
+
+.blog-post h2 {
+    font-family: var(--mainHeading);
+    font-size: 1.3em;
+    margin-top: 0;
+    margin-bottom: -5px;
+}
+
+.blog-post .date {
+    color: var(--blackAlternate);
+    font-size: .8em;
+    font-weight: 600;
+}
+
+.blog-post .date::before {
+    content: "Published Date: ";
+}
+
+.read-more-btn {
+    color: var(--textWhite);
+    background-color: var(--accentRedDark);
+    border-radius: 12px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 8em;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.read-more-btn:hover {
+    background-color: var(--accentRed);
+    transition: all .2s;
+    transform: scale(1.02);
+}
+
+/* Contact Us Page css */
+
+
+
+
+
+
+
+
+
+
 
 /* scrollbar */
 

@@ -1,0 +1,25 @@
+{
+  "posts": [
+    {
+      "title": "Sample Blog Post 1",
+      "date": "2023-05-20",
+      "image": "../images/hero.jpg",
+      "url": "blog-post-1.html",
+      "content": ""
+    },
+    {
+      "title": "Sample Blog Post 2",
+      "date": "2023-05-15",
+      "image": "../images/everest-overlay.jpg",
+      "url": "blog-post-2.html",
+      "content": ""
+    },
+    {
+      "title": "Sample Blog Post 3",
+      "date": "2023-05-10",
+      "image": "../images/budo.jpg",
+      "url": "blog-post-3.html",
+      "content": ""
+    }
+  ]
+}
