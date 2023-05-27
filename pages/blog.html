@@ -54,7 +54,7 @@
             <div class="blog-grid" id="blog-posts-container"></div>
 
             <script>
-                fetch('../blog-data/blog-post.json')
+                fetch('../data/blog-post.json')
                 .then(response => response.json())
                 .then(data => {
                     const container = document.getElementById('blog-posts-container');
