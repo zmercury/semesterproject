@@ -20,6 +20,12 @@
     <script defer src="./assets/brands.js"></script>
     <script defer src="./assets/solid.js"></script>
     <script defer src="./assets/fontawesome.js"></script>
+    <script>
+        function scrollView() {
+            let element = document.getElementById("mapContainer");
+            element.scrollIntoView();
+        }
+    </script>
     <title>Ouality School - Home</title>
 </head>
 
@@ -38,14 +44,15 @@
             </ul>
             </div>
             <div class="interactionContainer">
-                <button class="admitNowButton">Admit Now </button>
-                <button class="menuButton">
+                <button class="admitNowButton" onclick="location.href='./pages/contactus.html'">Admit Now</button>
+                <button class="menuButton" id="toggleButton" onclick="scrollView()">
                     <span class="iconColorTop">
-                        <i class="fa fa-bars"></i>
+                        <i class="fa-solid fa-location-dot"></i>
                     </span>
                 </button>
             </div>
         </div>
+    </div>
     </div>
     <div class="heroContainer">
         <div class="innerHeroContainer">
@@ -82,10 +89,10 @@
     <div class="mainInfoSection">
         <div class="infoLeft">
             <p class="infoPara">A Short Video Tour</p>
-            <h2 class="infoHeading">Welcome to <br> Everest English School</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/i1PG-5sEfh8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h2 class="infoHeading">Welcome to <br> Quality English School</h2>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/60NWz2Zp7vk?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <p class="infoBottomPara">
-                Rato Bangala is a co-educational day school that also houses a teacher training institute. It strives to replicate its innovative teaching methods and quality instruction (called the Rato Bangala Method) in schools across Nepal.
+                Quality School is a co-educational day school that also houses a teacher training institute. It strives to replicate its innovative teaching methods and quality instruction (called the Quality Method) in schools across Nepal.
             </p>
             <span class="infoBottomReadMore">Learn More About Us 
                 <i class="fa fa-arrow-right" aria-hidden="true"></i>
@@ -98,7 +105,7 @@
                 <span class="rightTopDate">Published on 20 April</span>
                 <p class="rightTopDesc">Curriculum Meeting of Unit I: 18, 19, and 23 May
                     Curriculum Meeting of Unit II: 18 May</p>
-                    <a><span class="rightTopSpan">Read More
+                    <a href="#"><span class="rightTopSpan">Read More
                         <i class="fa fa-arrow-right" aria-hidden="true"></i>
                     </span></a>
                     
@@ -106,7 +113,7 @@
                 <div class="rightBottom">
                     <h3 class="rightTopHeading">School Counseling</h3>
                     <p class="rightTopDesc">Our highly successful college counseling team consists of qualified and experienced mentors who guide the students in large and small groups and one-on-one to help them seek colleges and universities that are the best matches for them.</p>
-                    <a><span class="rightTopSpan">More on School Counseling
+                    <a href="#"><span class="rightTopSpan">More on School Counseling
                         <i class="fa fa-arrow-right" aria-hidden="true"></i>
                     </span></a>
                 </div>
@@ -116,11 +123,11 @@
             <div class="principalInnerContainer">
                 <div class="innerLeft">
                     <div class="innerLeftImageContainer">
-                        <img src="./images/Principal.jpeg" alt="" class=innerLeftImage">
+                        <img src="./images/principalQuality.jpg" alt="" class=innerLeftImage">
                     </div>
                     <div class="innerLeftContent">
                         <span class="infoPara">Message from Principal</span>
-                        <h2 class="infoheading">Milan Dixit</h3>
+                        <h2 class="infoheading">Govinda Bahadur Khadka</h3>
                         <p class="infoBottomPara">Whether you visit us online or in person, we hope you will get a sense of what Rato Bangala is and the mission that drives us. We are a progressive learning community that works to educate the whole person and prepare them for life.</p>
                         <span class="infoBottomReadMore">View Detail Message
                             <i class="fa fa-arrow-right" aria-hidden="true"></i>
@@ -129,11 +136,11 @@
             </div>
             <div class="innerLeft">
                 <div class="innerLeftImageContainer">
-                    <img src="./images/Director.jpeg" alt="" class=innerLeftImage">
+                    <img src="./images/directorQuality.jpg" alt="" class=innerLeftImage">
                 </div>
                 <div class="innerLeftContent">
-                    <span class="infoPara">Message from Principal</span>
-                    <h2 class="infoheading">Santa Dixit</h3>
+                    <span class="infoPara">Message from Director</span>
+                    <h2 class="infoheading">Ram Kumar Nepal</h3>
                     <p class="infoBottomPara">For over three decades, Rato Bangala School has continuously evolved to work towards its mission of providing the best in progressive pedagogy to its children. The path has been challenging and sometimes lonely.  </p>
                     <span class="infoBottomReadMore">View Detail Message
                         <i class="fa fa-arrow-right" aria-hidden="true"></i>
@@ -142,7 +149,7 @@
         </div>
         </div>
     </div>
-    <div class="mapSection">
+    <div class="mapSection" id="mapContainer">
         <div class="mapInnerContainer">
             <h1 class="mapHeading">Our Location</h1>
         </div>
