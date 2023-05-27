@@ -20,7 +20,7 @@
     <script defer src="../assets/brands.js"></script>
     <script defer src="../assets/solid.js"></script>
     <script defer src="../assets/fontawesome.js"></script>
-    <title>Blog - Quality School</title>
+    <title>Contact Us - Quality School</title>
 </head>
 
 <body>
@@ -47,11 +47,32 @@
             </div>
         </div>
     </div>
+
+    <div class="container">
+        <div class="containerWrapper">
+            <div class="containerInner">
+                <h1 class="page-title">Contact Information</h1>
+                <div id="contact-details" class="contact-details"></div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d525.0949718735981!2d85.47270910421557!3d27.70481503210224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb05040ed1f999%3A0xa8cc6f7cfb5bfb1e!2sQuality%20English%20Secondary%20School!5e0!3m2!1sen!2snp!4v1685180516231!5m2!1sen!2snp" width="90%" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="containerInner">
+                <h1 class="page-title">Contact Form</h1>
+                <form id="contact-form" class="contact-form" method="POST" action="#">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" class="form-input" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-input" required>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" class="form-textarea" required></textarea>
+                    <input type="submit" value="Send Message" class="form-submit">
+                </form>
+            </div>
+        </div>
+    </div>
     
-
-
+    
     <div class="footerContainer">
-        <div class="footerInnerContainer">
+          <div class="footerInnerContainer">
             <div class="footerSocial">
                 <div class="footerLogo">
                     <img src="../images/Untitled-1logoMain.png" alt="" class="footerLogo">
@@ -95,6 +116,8 @@
             </div>
         </div>
     </div>
+
+    <script src="../js/contact.js"></script>
 </body>
 
 </html>

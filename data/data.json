@@ -1,0 +1,20 @@
+[
+    {
+      "name": "John Doe",
+      "role": "Principal",
+      "email": "principal@example.com",
+      "phone": "123-456-7890"
+    },
+    {
+      "name": "Jane Smith",
+      "role": "Admissions",
+      "email": "admissions@example.com",
+      "phone": "987-654-3210"
+    },
+    {
+      "name": "Mark Johnson",
+      "role": "IT Support",
+      "email": "support@example.com",
+      "phone": "555-123-4567"
+    }
+  ]
