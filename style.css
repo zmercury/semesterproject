@@ -20,6 +20,7 @@
     --darkTopTransparent: #02304750;
     --infoColor: #f6f9fc;
     --infoColorAlternate: #f6f9fc;
+    --borderColor: #eef0f2;
 
     --mainHeading: 'Nunito', sans-serif;
     --rato: "Open Sans", "Odoo Unicode Support Noto", sans-serif;
@@ -265,7 +266,7 @@ body {
 }
 
 .heroImage {
-    width: 1200px;
+    width: 90%;
     border-radius: 3em 0 0 0;
 
     margin-top: -2em;
@@ -274,7 +275,7 @@ body {
 
 
 .alternateHeroContainer {
-    width: 1200px;
+    width: 90%;
     height: 100px;
 
     border-radius: 0 0 0 3em;
@@ -381,7 +382,7 @@ body {
 
 .infoPara:after {
     content: "";
-    display: inline-block;
+    display: inline-block;  
     height: 0.5em;
     vertical-align: bottom;
     width: 20%;
@@ -479,10 +480,136 @@ body {
 }
 
 
+.mapSection {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapInnerContainer {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mapInnerContainer > p {
+    font-size: 1.5em;
+}
+
+.mainMap {
+    width: 78%;
+    height: 500px;
+    padding-bottom: 5em;
+}
+
+.mapHeading  {
+    padding: 1em 0 1em 0;
+}
+
+.footerContainer {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 
+.footerInnerContainer {
+    width: 80%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footerLogo {
+    width: 160px;
+}
+
+.footerSocial {
+    width: 30%;
+    height: 130px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: first baseline;
+}
+
+.footerContent{
+    height: 100%;
+    width: 70%;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.footerContent > div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerContentHeading {
+    font-weight: 700;
+    color: var(--primaryColor);
+    padding: 0 0 1em 0;
+}
 
 
+.footerLinks {
+    padding-bottom: .5em ;
+
+    font-size: .9em;
+    font-weight: 500;
+}
+
+.footerSocialIcons {
+    color: var(--blackAlternate);
+    font-size: 1.4em;
+    padding: .2em .4em;
+
+    border: 1px solid var(--borderColor);
+    border-radius: 6px;
+}
+
+.footerBottomContainer {
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: .9em;
+    font-weight: 600;
+}
+
+.footerBottomInnerContainer {
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerBottomLeft {
+    width: 50%;
+}
+
+.footerBottomRight {
+    width: 50%;
+}
 
 
 
