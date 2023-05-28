@@ -20,12 +20,7 @@
     <script defer src="./assets/brands.js"></script>
     <script defer src="./assets/solid.js"></script>
     <script defer src="./assets/fontawesome.js"></script>
-    <script>
-        function scrollView() {
-            let element = document.getElementById("mapContainer");
-            element.scrollIntoView();
-        }
-    </script>
+    <script src="./js/scrollLocation.js"></script>
     <title>Ouality School - Home</title>
 </head>
 
@@ -62,12 +57,14 @@
                 </div>
                 <div class="innerHeroTopRight">
                     <p>As a pioneering institute that introduced child-centered learning in Nepal,  Quality School is known for its progressive education.</p>
-                    <button class="innerHeroTopRightButton">
-                        <span>Learn More</span>
-                        <span class="buttonIcon">
-                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                        </span>
-                    </button>
+                    <a href="./pages/learnmore.html">
+                        <button class="innerHeroTopRightButton" onclick="location.href="./pages/learnmore.html">
+                            <span>Learn More</span>
+                            <span class="buttonIcon">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </span>
+                        </button>
+                    </a>
                 </div>
             </div>
             <div class="innerHeroBottom">
@@ -156,18 +153,18 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.00936648520394!2d85.47254648624894!3d27.704253918213954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb05040ed1f999%3A0xa8cc6f7cfb5bfb1e!2sQuality%20English%20Secondary%20School!5e0!3m2!1sen!2snp!4v1685067821408!5m2!1sen!2snp" class="mainMap" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     </div>  
-    <div class="footerContainer">
+    <div class="footerContainer" id="footerContainer">
         <div class="footerInnerContainer">
             <div class="footerSocial">
                 <div class="footerLogo">
                     <img src="./images/Untitled-1logoMain.png" alt="" class="footerLogo">
                 </div>
                 <div class="footerSocialInner">
-                    <span class="footerSocialIcons"><i class="fa-brands fa-facebook"></i></span>
-                    <span class="footerSocialIcons"><i class="fa-brands fa-instagram"></i></span>
-                    <span class="footerSocialIcons"><i class="fa-brands fa-twitter"></i></span>
-                    <span class="footerSocialIcons"><i class="fa-brands fa-tiktok"></i></span>
-                    <span class="footerSocialIcons"><i class="fa-solid fa-envelope"></i></i></span>
+                    <a href="https://m.facebook.com/profile.php?id=758752490841103" target="_blank"><span class="footerSocialIcons"><i class="fa-brands fa-facebook"></i></span></a>
+                    <a target="_blank" href="https://instagram.com/"><span class="footerSocialIcons"><i class="fa-brands fa-instagram"></i></span></a>
+                    <a target="_blank" href="https://twitter.com/"><span class="footerSocialIcons"><i class="fa-brands fa-twitter"></i></span></a>
+                    <a target="_blank" href="https://tiktok.com/"><span class="footerSocialIcons"><i class="fa-brands fa-tiktok"></i></span></a>
+                    <a target="_blank" href="mailto:info@qess.edu.np"><span class="footerSocialIcons"><i class="fa-solid fa-envelope"></i></i></span></a>
                 </div>
             </div>
             <div class="footerContent">
