@@ -4,50 +4,15 @@
       "title": "Embracing Growth and Learning: A Journey Through Our School",
       "date": "2023-05-20",
       "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=932&q=80",
-      "url": "blog-post-1.html",
-      "content": ""
+      "url": "../blogs/blog-post-1.html",
+      "content": "Lorem ipsum dolor sit amet consectetur adipiscing elit Mauris venenatis at dui a placerat Morbi lobortis augue ac egestas eleifend Maecenas congue tellus sit amet elit tristique quis gravida nulla egestas Etiam sagittis velit et risus posuere scelerisque Duis sit amet tempor tortor Nullam a laoreet elit Maecenas placerat sem varius felis iaculis consectetur facilisis erat pharetra"
     },
     {
       "title": "Fostering a Lifelong Love for Learning: Unleashing the Potential Within",
       "date": "2023-05-15",
       "image": "https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80",
-      "url": "blog-post-2.html",
-      "content": ""
-    },
-    {
-      "title": "Nurturing Well-Rounded Individuals: Holistic Education at Our School",
-      "date": "2023-05-10",
-      "image": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80",
-      "url": "blog-post-3.html",
-      "content": ""
-    },
-    {
-      "title": "Nurturing Well-Rounded Individuals: Holistic Education at Our School",
-      "date": "2023-05-10",
-      "image": "https://images.unsplash.com/photo-1494949649109-ecfc3b8c35df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=800",
-      "url": "blog-post-3.html",
-      "content": ""
-    },
-    {
-      "title": "Nurturing Well-Rounded Individuals: Holistic Education at Our School",
-      "date": "2023-05-10",
-      "image": "https://images.unsplash.com/photo-1495727034151-8fdc73e332a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=865&q=80",
-      "url": "blog-post-3.html",
-      "content": ""
-    },
-    {
-      "title": "Nurturing Well-Rounded Individuals: Holistic Education at Our School",
-      "date": "2023-05-10",
-      "image": "https://plus.unsplash.com/premium_photo-1682787495017-a8f4c7584868?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-      "url": "blog-post-3.html",
-      "content": ""
-    },
-    {
-      "title": "Nurturing Well-Rounded Individuals: Holistic Education at Our School",
-      "date": "2023-05-10",
-      "image": "https://images.unsplash.com/photo-1588075592446-265fd1e6e76f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80",
-      "url": "blog-post-3.html",
-      "content": ""
+      "url": "../blog-post-2.html",
+      "content": "Lorem ipsum dolor sit amet consectetur adipiscing elit Mauris venenatis at dui a placerat Morbi lobortis augue ac egestas eleifend Maecenas congue tellus sit amet elit tristique quis gravida nulla egestas Etiam sagittis velit et risus posuere scelerisque Duis sit amet tempor tortor Nullam a laoreet elit Maecenas placerat sem varius felis iaculis consectetur facilisis erat pharetra"
     }
   ]
 }
