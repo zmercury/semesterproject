@@ -31,7 +31,8 @@
     --montserrat: 'Montserrat', sans-serif;
 }
 
-html {
+* {
+    -webkit-user-drag: none;
     scroll-behavior: smooth;
 }
 
@@ -817,7 +818,6 @@ body {
     display: none;
 }
 
-
 /* learn more page css  */
 
 .underConstructionContainer {
@@ -831,14 +831,13 @@ body {
 }
 
 .innerUnderConstructionContainer {
-    width: 80%;
+    width: 83%;
     height: 100%;
     
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-
     text-align: justify;
 }
 
@@ -888,5 +887,5 @@ body {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--accentRed)  n;
+    background: var(--accentRed);
 }
