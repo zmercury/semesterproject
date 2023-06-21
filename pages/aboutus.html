@@ -40,13 +40,27 @@
             </div>
             <div class="interactionContainer">
                 <button class="admitNowButton">Admit Now </button>
-                <button class="menuButton" onclick="scrollIntoFooter();">
+                <button class="menuButton" id="toggleButton" onclick="scrollIntoFooter();">
                     <span class="iconColorTop">
                         <i class="fa fa-bars"></i>
                     </span>
                 </button>
+                <button class="menuButton" id="toggleMenuButton" onclick="">
+                    <span class="iconColorTop">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </button> 
             </div>
         </div>
+    </div>
+
+    <div class="mobileMenuContainer hidden" id="mobileMenu">
+        <ul class="mobileNavList">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/aboutus.html">About</a></li>
+            <li><a href="../pages/contactus.html">Contact</a></li>
+            <li><a href="../pages/blog.html">Blog</a></li>
+        </ul>
     </div>
     
     <div class="aboutContainer">
@@ -120,5 +134,14 @@
         </div>
     </div>
 </body>
+
+<script>
+    const targetMenu = document.getElementById("mobileMenu");
+    const menuToggleButton = document.getElementById("toggleMenuButton");
+
+    menuToggleButton.onclick = function() {
+        targetMenu.classList.toggle('hidden');
+    }
+</script>
 
 </html>

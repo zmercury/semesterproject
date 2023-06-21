@@ -44,11 +44,25 @@
                     <span class="iconColorTop">
                         <i class="fa-solid fa-location-dot"></i>
                     </span>
-                </button>
+                </button>   
+                <button class="menuButton" id="toggleMenuButton" onclick="">
+                    <span class="iconColorTop">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </button> 
             </div>
         </div>
     </div>
+    
+    <div class="mobileMenuContainer hidden" id="mobileMenu">
+            <ul class="mobileNavList">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./pages/aboutus.html">About</a></li>
+                <li><a href="./pages/contactus.html">Contact</a></li>
+                <li><a href="./pages/blog.html">Blog</a></li>
+            </ul>
     </div>
+    
     <div class="heroContainer">
         <div class="innerHeroContainer">
             <div class="innerHeroTop">
@@ -77,17 +91,19 @@
             </div>
         </div>
     </div>
+
     <div class="alternateHeroContainer">
         <span>
             <i class="fa fa-info-circle" aria-hidden="true"></i>
             Our school has implemented all necessary safety measures for the COVID-19 virus, ensuring the safety of all students.
         </span>
     </div>
+
     <div class="mainInfoSection">
         <div class="infoLeft">
             <p class="infoPara">A Short Video Tour</p>
             <h2 class="infoHeading">Welcome to <br> Quality English School</h2>
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/60NWz2Zp7vk?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe class="infoVideo" width="560" height="315" src="https://www.youtube-nocookie.com/embed/60NWz2Zp7vk?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <p class="infoBottomPara">
                 Quality School is a co-educational day school that also houses a teacher training institute. It strives to replicate its innovative teaching methods and quality instruction (called the Quality Method) in schools across Nepal.
             </p>
@@ -115,7 +131,8 @@
                     </span></a>
                 </div>
             </div>
-        </div>
+    </div>
+
     <div class="principalInfoSection">
             <div class="principalInnerContainer">
                 <div class="innerLeft">
@@ -146,13 +163,14 @@
         </div>
         </div>
     </div>
+    
     <div class="mapSection" id="mapContainer">
         <div class="mapInnerContainer">
             <h1 class="mapHeading">Our Location</h1>
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.00936648520394!2d85.47254648624894!3d27.704253918213954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb05040ed1f999%3A0xa8cc6f7cfb5bfb1e!2sQuality%20English%20Secondary%20School!5e0!3m2!1sen!2snp!4v1685067821408!5m2!1sen!2snp" class="mainMap" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    </div>  
+
     <div class="footerContainer" id="footerContainer">
         <div class="footerInnerContainer">
             <div class="footerSocial">
@@ -199,5 +217,14 @@
         </div>
     </div>
 </body>
+
+<script>
+    const targetMenu = document.getElementById("mobileMenu");
+    const menuToggleButton = document.getElementById("toggleMenuButton");
+
+    menuToggleButton.onclick = function() {
+        targetMenu.classList.toggle('hidden');
+    }
+</script>
 
 </html>
