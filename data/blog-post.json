@@ -2,23 +2,26 @@
   "posts": [
     {
       "title": "Embracing Growth and Learning: A Journey Through Our School",
-      "date": "2023-05-20",
+      "date": "20th June, 2023",
       "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=932&q=80",
       "url": "../blogs/blog-post-1.html",
+      "userPostedBy": "Mercury",
       "content": "Lorem ipsum dolor sit amet consectetur adipiscing elit Mauris venenatis at dui a placerat Morbi lobortis augue ac egestas eleifend Maecenas congue tellus sit amet elit tristique quis gravida nulla egestas Etiam sagittis velit et risus posuere scelerisque Duis sit amet tempor tortor Nullam a laoreet elit Maecenas placerat sem varius felis iaculis consectetur facilisis erat pharetra"
     },
     {
       "title": "Fostering a Lifelong Love for Learning: Unleashing the Potential Within",
       "date": "2023-05-15",
       "image": "https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80",
-      "url": "../blog-post-2.html",
+      "url": "../blogs/blog-post-2.html",
+      "userPostedBy": "Mercury",
       "content": "Lorem ipsum dolor sit amet consectetur adipiscing elit Mauris venenatis at dui a placerat Morbi lobortis augue ac egestas eleifend Maecenas congue tellus sit amet elit tristique quis gravida nulla egestas Etiam sagittis velit et risus posuere scelerisque Duis sit amet tempor tortor Nullam a laoreet elit Maecenas placerat sem varius felis iaculis consectetur facilisis erat pharetra"
     },
     {
       "title": "Embracing Growth and Learning: A Journey Through Our School",
       "date": "2023-05-15",
-      "image": "https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80",
-      "url": "../blog-post-2.html",
+      "image": "https://images.unsplash.com/photo-1594608661623-aa0bd3a69d98?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=648&q=80",
+      "url": "../blogs/blog-post-3.html",
+      "userPostedBy": "Mercury",
       "content": "Lorem ipsum dolor sit amet consectetur adipiscing elit Mauris venenatis at dui a placerat Morbi lobortis augue ac egestas eleifend Maecenas congue tellus sit amet elit tristique quis gravida nulla egestas Etiam sagittis velit et risus posuere scelerisque Duis sit amet tempor tortor Nullam a laoreet elit Maecenas placerat sem varius felis iaculis consectetur facilisis erat pharetra"
     }
   ]

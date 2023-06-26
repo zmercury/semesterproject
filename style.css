@@ -1001,6 +1001,15 @@ body {
 
 /* blogpage css */
 
+.blog-post-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
 .blogContainer {
     width: 100%;
     padding: 2em 0;
@@ -1055,6 +1064,19 @@ body {
     content: "Published Date: ";
 }
 
+@media screen and (max-width: 982px) {
+    .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .blog-grid {
+    grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
 .read-more-btn {
     color: var(--textWhite);
     background-color: var(--accentRedDark);
@@ -1083,17 +1105,12 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 3em 0;
+    padding: 1.2em 0;
     gap: 2em;
 }
 
-.blogListMore {
-    background-color: #02304730;
-    width: 15%;
-}
-
 #blogPost {
-    width: 50%;
+    width: 70%;
 
     display: flex;
     flex-direction: column;
@@ -1102,18 +1119,30 @@ body {
 }
 
 #titleBlog {
-    font-size: 24px;
+    font-size: 30px;
+    text-align: center;
     padding: 0%;
     margin: 0%;
+
+    padding-bottom: 10px;
+}
+
+#userPostedBy {
+    padding: 0%;
+    margin: 0%;
+    font-size: 14px;
+
+    color: var(--accentRedDark);
+    /* margin-bottom: 2em; */
     
-    margin-bottom: .5em;
-    text-align: center;
+    display: none;
 }
 
 #dateBlog {
     padding: 0%;
     margin: 0%;
     font-size: 14px;
+    margin-bottom: 2em;
     font-weight: bold;
 }
 
@@ -1126,6 +1155,75 @@ body {
 
 #contentBlog {
     text-align: justify;
+}
+
+.comment-section {
+    width: 70%;
+
+    margin-bottom: 2em;
+}
+
+.comment-section h2 {
+    margin-bottom: 10px;
+}
+
+.comment-section #comment-form {
+    margin-top: 10px;
+}
+
+.comment-section #comment-input {
+    width: 100%;
+    height: 100px;
+    resize: vertical;
+
+    border: 1px solid var(--borderColor);
+    border-radius: 12px;
+
+    padding: 1em 1.5em;
+    margin-bottom: 7px;
+}
+
+.comment-section #comments-container {
+    margin-top: 10px;
+}
+
+.comment-section .comment {
+    padding: 1em 1.5em;
+    background-color: var(--infoColor);
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.comment-section .comment .comment-text {
+    margin: 0;
+    font-size: 15px;
+    font-family: var(--mainHeading);
+}
+
+.comment-section .comment .comment-date {
+    font-size: 12px;
+    color: var(--accentGrey);
+}
+
+#comment-button {
+    color: var(--textWhite);
+    background-color: var(--accentRedDark);
+    border-radius: 12px;
+    border: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.4em;
+    width: 8em;
+    font-size: medium;
+    font-weight: 60
+}
+
+@media screen and (max-width: 1100px) {
+    #blogPost {
+        width: 90% !important;
+    }
 }
 
 
