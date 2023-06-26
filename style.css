@@ -949,10 +949,6 @@ body {
 }
 
 @media screen and (max-width: 980px) {
-    .footerContainer {
-
-    }
-
     .footerInnerContainer {
         flex-direction: column;
         justify-content: center;
@@ -1222,6 +1218,10 @@ body {
 
 @media screen and (max-width: 1100px) {
     #blogPost {
+        width: 90% !important;
+    }
+
+    .comment-section {
         width: 90% !important;
     }
 }
