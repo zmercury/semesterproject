@@ -550,6 +550,10 @@ body {
     color: var(--mainBlack);
 }
 
+.link_front {
+    text-decoration: none;
+}
+
 .rightBottom {
     background-color: var(--infoColor);
     width: 60%;
