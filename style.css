@@ -66,6 +66,21 @@ body {
     }
 }
 
+@media screen and (max-width: 992px) {
+    #toggleButton {
+        display: none;
+    }
+
+    .navContainer {
+        display: none;
+    }
+
+    .innerHeaderContainer {
+        width: 84% !important;
+        justify-content: space-between   !important;
+    }
+}
+
 @media only screen and (max-width: 600px)  {
     .navContainer {
         display: none;
@@ -440,6 +455,26 @@ body {
     }
 }
 
+@media screen and (max-width: 992px) {
+    .innerHeroTop {
+        height: fit-content;
+        flex-direction: column;
+        padding: 0 1.8em;
+    }
+
+    .innerHeroTop > div {
+        width: fit-content;
+        padding: 0 45px;
+    }
+
+    .measuresContent {
+        margin: 0 2em !important;
+    }
+
+    .innerHeroContainer {
+        width: 100% !important;
+    }
+}
 
 
 
@@ -592,6 +627,39 @@ body {
     }
 }
 
+@media screen and (max-width: 1150px) {
+    .mainInfoSection {
+        width: 100%;
+        flex-direction: column;
+        height: fit-content;
+        margin: 2em 0;
+
+        align-items: center;
+    }
+
+    .infoLeft {
+        padding: 0;
+        width: 85%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .infoRight {
+        width: 100%;
+    }
+
+
+    .rightTop,
+    .rightBottom {
+        width: 77%;
+        padding: 2em 3em;
+    }
+    
+    .infoVideo {
+        width: 100%;
+    }
+}
 
 
 
@@ -681,7 +749,29 @@ body {
     }
 }
 
+@media screen and (max-width: 980px) {
+    .principalInfoSection {
+        height: fit-content;
+    }
 
+    .principalInnerContainer {
+        flex-direction: column;
+    }
+
+    .principalInnerContainer > div {
+        width: 100%;
+        margin-bottom: 4em;
+    }
+
+    .principalInnerContainer > div:nth-child(1) {
+        margin-top: 4em;
+    }
+
+    .innerLeftImage {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
 
 
 
@@ -856,6 +946,28 @@ body {
         margin-bottom: 1em;
     }
 
+}
+
+@media screen and (max-width: 980px) {
+    .footerContainer {
+
+    }
+
+    .footerInnerContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footerInnerContainer > div {
+        width: 100%;
+    }
+
+    .footerSocial {
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 3em;
+    }
 }
 
 
