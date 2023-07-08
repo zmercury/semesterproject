@@ -2,10 +2,14 @@
 
 Simple School Website made using basic HTML, CSS and Javascript. 
 
+
+|Desktop|Mobile|
+|---|---|
+|![Homepage](./images/Homepage.png)|<img src="./images/mobileHomepage.jpeg" alt="mobile homepage" style="width: 300px; height: auto;">|
 #### Desktop View
-![Homepage](./images/Homepage.png)
+
 #### Mobile View
-![Homepage](./images/mobileHomepage.jpeg)
+
 
 
 Images from [Unsplash](https://unsplash.com/)
