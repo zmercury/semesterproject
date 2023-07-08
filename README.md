@@ -12,5 +12,3 @@ Simple School Website made using basic HTML, CSS and Javascript.
 
 
 
-
-

@@ -199,6 +199,20 @@ body {
     font-weight: 700;
 }
 
+.logoContainer {
+    position: relative;
+}
+
+.logoContainer > a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-indent: -9999px; 
+    overflow: hidden; 
+}
+
 .logoContainer > img {
     width: 160px;
     height: auto;
@@ -442,11 +456,14 @@ body {
     .innerHeroTop {
         height: fit-content;
         flex-direction: column;
+
+        padding: 0 !important;
+        margin: 0;
     }
 
     .innerHeroTop > div {
         width: fit-content;
-        padding: 0 45px;
+        height: auto;
     }
 
     .alternateHeroContainer > span {
@@ -551,7 +568,7 @@ body {
 }
 
 .link_front {
-    text-decoration: none;
+    text-decoration: none;  
 }
 
 .rightBottom {
@@ -623,7 +640,7 @@ body {
 
     .rightTop,
     .rightBottom {
-        padding: 2em 3em;
+        padding: 2em 1.2em !important;
     }
     
     .infoVideo {
@@ -996,6 +1013,18 @@ body {
 .aboutInnerContainer > span {
     font-size: 2em;
     font-weight: 600;
+    margin-bottom: .5em;
+}
+
+.aboutHeroImage {
+    width: 100%;
+    height: auto;
+
+    /* margin: 1em 0; */
+}
+
+.aboutInnerContainer > img {
+    border-radius: 12px;
 }
 
 
@@ -1376,6 +1405,17 @@ body {
 .innerUnderConstructionContainer > h1 {
     font-family: var(--montserrat) !important;
 }
+
+.learnmore-image{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.learnmoreInnerHeading {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
 
 
 
